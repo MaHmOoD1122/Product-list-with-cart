@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
 import data from "../data.json";
-export default function ProductList() {
+export default function ProductList({ onAddItem }) {
   return (
     <div>
       <h1 className="font-bold text-4xl text mb-6">Desserts</h1>
@@ -12,6 +12,7 @@ export default function ProductList() {
             itemCategory={item.category}
             itemName={item.name}
             itemPrice={item.price.toFixed(2)}
+            onAddItem={onAddItem}
           />
         ))}
       </div>
