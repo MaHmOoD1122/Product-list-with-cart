@@ -8,7 +8,7 @@ export default function ProductCard({ item, cart = [], dispatch }) {
   return (
     <div className="flex flex-col font-red-hat w-full md:w-fit">
       <img
-        src={item?.image?.desktop}
+        src={`${import.meta.env.BASE_URL}${item?.image?.desktop?.replace(/^\/?(public\/)?/, "")}`}
         alt={item?.name}
         className={`w-full rounded-xl transition-all duration-300 ${quantity === 0 ? "border-3 border-transparent" : "border-3 border-red"}`}
       />
