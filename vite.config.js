@@ -12,4 +12,5 @@ export default defineConfig({
       },
     }),
   ],
+  base: "/Product-list-with-cart/",
 });
