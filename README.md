@@ -1,5 +1,5 @@
 ## Description
-A dynamic "Product List with Cart" web app built with React.js and Tailwind CSS, based on a Frontend Mentor challenge.
+- A dynamic "Product List with Cart" web app built with React.js and Tailwind CSS, based on a Frontend Mentor challenge.
 
 ## Tech stack 🛠️ : 
 - HTML
@@ -9,3 +9,6 @@ A dynamic "Product List with Cart" web app built with React.js and Tailwind CSS,
 
 ## This project focuses on 🎯 :
 - State Management: Managing complex application and cart state efficiently using useReducer for centralized action-based logic (add, remove, update quantities) and useState for local UI interactions.
+
+### Live link 🔗:
+- https://mahmood1122.github.io/Product-list-with-cart/
