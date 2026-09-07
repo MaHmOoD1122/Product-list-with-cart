@@ -1,20 +1,21 @@
 import ProductCard from "./ProductCard";
 import data from "../data.json";
-export default function ProductList({ onAddItem }) {
+export default function ProductList({ cart, dispatch }) {
   return (
     <div>
       <h1 className="font-bold text-4xl text mb-6">Desserts</h1>
-      <div className="grid grid-cols-3 gap-6">
-        {data.map((item, index) => (
-          <ProductCard
-            key={index}
-            imgSrc={item.image.desktop}
-            itemCategory={item.category}
-            itemName={item.name}
-            itemPrice={item.price.toFixed(2)}
-            onAddItem={onAddItem}
-          />
-        ))}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {data.map((item) => {
+          const productWithId = { ...item, id: item.id ?? item.name };
+          return (
+            <ProductCard
+              key={productWithId.id}
+              item={productWithId}
+              dispatch={dispatch}
+              cart={cart}
+            />
+          );
+        })}
       </div>
     </div>
   );
