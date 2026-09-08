@@ -6,6 +6,7 @@
 - CSS
 - JS
 - React.js
+- Tailwind 
 
 ## This project focuses on 🎯 :
 - State Management: Managing complex application and cart state efficiently using useReducer for centralized action-based logic (add, remove, update quantities) and useState for local UI interactions.
